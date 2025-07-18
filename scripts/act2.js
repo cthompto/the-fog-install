@@ -167,8 +167,17 @@ function init() {
     }
   };
 
+  const exitCheck = function (event) {
+    if (event.which == 3) {
+      blocker.style.display = "block";
+      instructions.style.display = "";
+      controls.unlock();
+    }
+  }; 
+
   document.addEventListener("keydown", onKeyDown);
   document.addEventListener("keyup", onKeyUp);
+  document.addEventListener("mousedown", exitCheck);
 
   // Add raycasting for mouse controls
   raycaster = new THREE.Raycaster(

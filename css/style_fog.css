@@ -243,8 +243,17 @@ label {
 
 .move-mid {
   padding: 0.05%;
-  margin-top: 0.25%;
+  margin-top: 0.20%;
   margin-bottom: 0.25%;
+}
+
+.act-title {
+  font-style: bold;
+  color: #ffffff;
+  /* max-width: 75%; */
+  text-align: center;
+  margin: auto;
+  padding-bottom: 2%;
 }
 
 /* Act 2 */

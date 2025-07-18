@@ -180,6 +180,13 @@ function init() {
     }
   });
 
+   const exitCheck = function (event) {
+    if (event.which == 3) {
+      blocker.style.display = "block";
+      instructions.style.display = "";
+    }
+  }; 
+
   controls = new DragControls([...objects], camera, effect.domElement);
   controls.addEventListener("drag", render);
 
@@ -188,6 +195,7 @@ function init() {
   document.addEventListener("click", onClick);
   window.addEventListener("keydown", onKeyDown);
   window.addEventListener("keyup", onKeyUp);
+  document.addEventListener("mousedown", exitCheck);
 
 }
 

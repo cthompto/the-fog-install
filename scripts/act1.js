@@ -628,7 +628,7 @@ function onWindowResize() {
 
 // Respond to 'esc' key being pressed
 function onKeyUp(event) {
-  if (event.keyCode === 27) {
+  if (event.keyCode === 38) {
     instructions.style.display = "";
     blocker.style.display = "";
     chosen = false;
