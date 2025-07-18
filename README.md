@@ -3,6 +3,9 @@
 A digital projects commission for the [San José Museum of Art](https://sjmusart.org/). <br/>
 The project can be viewed here: [https://sjmusart.org/digital-projects/chelsea-thompto](https://sjmusart.org/digital-projects/chelsea-thompto)
 
+## Installation Version
+This version has minor changes to faciliate display with projector and mini keyboard.
+
 ## Overview
 This work is comprised of 3 "acts" exploring our relationship to fog as a society and the potential for fog to serve as a positive role model for trans embodiment. Each act is built as a procedurally generated 3D space using [three.js](https://threejs.org/). The work has been designed as an website without ads or tracking and with intentionally open source code. Sustainability and accessibility also informed the design choices for the site.
 
