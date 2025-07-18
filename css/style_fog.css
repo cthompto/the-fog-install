@@ -1,0 +1,477 @@
+/* Style sheet for The Fog - Chelsea Thompto*/
+/*
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap");
+*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* General */
+
+html {
+  background-color: black;
+}
+
+html,
+body {
+  /*
+  font-family: "Source Code Pro", monospace;
+  */
+  font-family: "Red Hat Mono", monospace;
+  margin: auto;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Canvas style is used for styling the three.js window*/
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#space2 {
+  width: 525px;
+  height: 500px;
+  margin: auto;
+}
+
+h1 {
+  font-style: bold;
+  color: #ffffff;
+  /* max-width: 75%; */
+  text-align: center;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+h1.title-main {
+  padding-top: 12.5%;
+  font-size: 750%;
+  letter-spacing: 0.25em;
+}
+
+h2 {
+  color: #ffffff;
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+h2.title-second {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 150%;
+  font-weight: 400;
+}
+
+p {
+  color: #ffffff;
+  line-height: 150%;
+}
+
+p.title-mid {
+  padding-left: 0%;
+  text-align: center;
+  margin: auto;
+  font-size: 250%;
+}
+
+p.mid {
+  padding-left: 0%;
+  text-align: center;
+  margin: auto;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+footer {
+  text-align: right;
+  font-weight: 100;
+  font-size: small;
+  position: fixed;
+  width: 50%;
+  left: 49%;
+  top: 93%;
+}
+
+#title-footer {
+  text-align: right;
+  font-weight: 100;
+  font-size: small;
+  position: fixed;
+  width: 50%;
+  left: 49%;
+  top: 93%;
+}
+
+a.mobile-link {
+  display: none;
+}
+
+a.desktop-link {
+  display: inline;
+}
+
+a:hover.desktoplink {
+  color: gainsboro0;
+}
+
+p.mobile-redirect-text {
+  display: none;
+}
+
+p.access-footer,
+a.access-footer {
+  text-align: left;
+}
+
+img.access-banner {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* Intro and Statement */
+
+#bg-title-ani {
+  z-index: -1;
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+/* Statement */
+
+.state-header {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+img.statement-img {
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+
+img:hover.statement-img {
+  opacity: 0.8;
+}
+
+h1:hover.header-link {
+  color: gainsboro;
+}
+
+.mc-two-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  width: 90%;
+}
+
+.colA {
+  padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  margin: auto;
+  /*border: 1px solid green;*/
+}
+
+#about-foot {
+  font-size: large;
+}
+
+/* Act 1 */
+
+#blocker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#instructions {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#startButton {
+  border: 1px solid white;
+  color: #ffffff;
+  background-color: black;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 2.5%;
+  font-size: 150%;
+  font-weight: 800;
+  font-family: "Red Hat Mono", monospace;
+  border-radius: 2%;
+  opacity: 0.9;
+}
+
+#audioBox {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 3%;
+}
+
+label {
+  color: #ffffff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1%;
+}
+
+.move-mid {
+  padding: 0.05%;
+  margin-top: 0.25%;
+  margin-bottom: 0.25%;
+}
+
+/* Act 2 */
+
+/* Act 3 */
+
+.act3-overlay {
+  position: fixed;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-user-drag: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  pointer-events: none;
+  /* border: 4px solid green; */
+}
+
+h1.act3-overlay {
+  max-width: 100%;
+}
+
+#ACT3-TEXT {
+  -webkit-user-drag: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  pointer-events: none;
+  color: black;
+  font-size: 75px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.blocker {
+  -webkit-user-drag: auto;
+  -webkit-user-select: auto; /* Safari */
+  -ms-user-select: auto; /* IE 10 and IE 11 */
+  user-select: auto; /* Standard syntax */
+  pointer-events: auto;
+  z-index: 2;
+}
+
+a.blocker {
+  -webkit-user-drag: auto;
+  -webkit-user-select: auto; /* Safari */
+  -ms-user-select: auto; /* IE 10 and IE 11 */
+  user-select: auto; /* Standard syntax */
+  pointer-events: auto;
+}
+
+/* About Page */
+
+main.about-text {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #ffffff;
+  max-width: 800px;
+  margin: auto;
+}
+
+div.to-about-text {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #ffffff;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-size: large;
+}
+
+h1.about-text {
+  text-align: left;
+  padding-bottom: 0%;
+}
+
+h2.about-text {
+  color: #ffffff;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 0%;
+  margin-left: 0%;
+  text-align: left;
+}
+
+a:hover.about-text {
+  color: Gainsboro;
+}
+
+a:visited.about-text {
+  color: Silver;
+}
+
+#logo {
+  max-width: 40%;
+  vertical-align: text-top;
+  padding-bottom: 5%;
+}
+
+#about-title {
+  text-align: left;
+  font-size: 400%;
+}
+
+#author {
+  text-align: left;
+  padding-bottom: 5%;
+  margin-left: 0%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  a.mobile-link {
+    display: inline;
+  }
+
+  a.desktop-link {
+    display: none;
+  }
+
+  p.mobile-redirect-text {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    padding-bottom: 5%;
+  }
+
+  p.access-footer,
+  a.access-footer {
+    text-align: center;
+    margin: auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+  #mc {
+    max-width: 90%;
+    margin: auto;
+    padding: auto;
+  }
+
+  .mc-two-col {
+    flex-basis: 100%;
+  }
+
+  .colA {
+    flex-basis: 200%;
+  }
+
+  main.about-text {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  footer {
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  #title-footer {
+    text-align: right;
+    font-weight: 100;
+    font-size: small;
+    position: fixed;
+    width: 55%;
+    left: 40%;
+    top: 93%;
+  }
+}
+
+@media (max-width: 700px) {
+  a.mobile-link {
+    display: inline;
+  }
+
+  a.desktop-link {
+    display: none;
+  }
+
+  p.mobile-redirect-text {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    padding-bottom: 5%;
+  }
+
+  p.access-footer,
+  a.access-footer {
+    text-align: center;
+    margin: auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+  #mc {
+    max-width: 95%;
+  }
+
+  main.about-text {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #logo {
+    max-width: 50%;
+  }
+
+  footer {
+    font-size: medium;
+  }
+
+  #title-footer {
+    text-align: right;
+    font-weight: 100;
+    font-size: medium;
+    position: fixed;
+    width: 60%;
+    left: 35%;
+    top: 90%;
+  }
+}
