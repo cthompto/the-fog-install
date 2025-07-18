@@ -431,6 +431,9 @@ function init() {
 
   // Respond to window resizing
   window.addEventListener("resize", onWindowResize);
+  window.addEventListener(`contextmenu`, (e) => {
+    e.preventDefault();
+  });
 }
 
 // Define animate loop

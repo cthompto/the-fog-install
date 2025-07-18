@@ -181,9 +181,13 @@ function init() {
   });
 
    const exitCheck = function (event) {
-    if (event.which == 3) {
+
+    event.stopPropagation();
+    if (event.which == 3) {      
       blocker.style.display = "block";
       instructions.style.display = "";
+      start = false;
+      audioToggle();
     }
   }; 
 
@@ -195,7 +199,12 @@ function init() {
   document.addEventListener("click", onClick);
   window.addEventListener("keydown", onKeyDown);
   window.addEventListener("keyup", onKeyUp);
-  document.addEventListener("mousedown", exitCheck);
+  window.addEventListener("mousedown", exitCheck);
+
+  window.addEventListener(`contextmenu`, (e) => {
+    e.preventDefault();
+  });
+
 
 }
 

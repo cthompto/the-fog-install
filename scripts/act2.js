@@ -319,6 +319,9 @@ function init() {
 
   // Listen for window resizing
   window.addEventListener("resize", onWindowResize);
+  window.addEventListener(`contextmenu`, (e) => {
+    e.preventDefault();
+  });
 }
 
 // Window resizing function
